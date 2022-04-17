@@ -1,0 +1,28 @@
+/* ! Inter Regular */
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../font/interVariable/Inter-Regular/Inter-Regular.ttf') format('truetype');
+    src: url('../font/interVariable/Inter-Regular/Inter-Regular.woff') format('woff');
+    font-weight: 400;
+}
+
+
+/* ! Inter Black */
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../font/interVariable/Inter-Black/Inter-Black.ttf') format('truetype');
+    src: url('../font/interVariable/Inter-Black/Inter-Black.woff') format('woff');
+    font-weight: 900;
+}
+
+
+/* ! Inter Medium */
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../font/interVariable/Inter-Medium/Inter-Medium.ttf') format('truetype');
+    src: url('../font/interVariable/Inter-Medium/Inter-Medium.woff') format('woff');
+    font-weight: 500;
+}

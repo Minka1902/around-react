@@ -1,0 +1,25 @@
+.profile__about-me {
+    font-family: Inter, Arial, sans-serif;
+    font-style: normal;
+    width: 415px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: white;
+    margin: 0;
+}
+
+@media screen and (min-width: 580px) and (max-width: 750px) {
+    .profile__about-me {
+        width: 220px;
+    }
+}
+
+@media screen and (max-width: 579.5px) {
+    .profile__about-me {
+        font-size: 14px;
+        width: 282px;
+        line-height: 17px;
+        text-align: center;
+    }
+}

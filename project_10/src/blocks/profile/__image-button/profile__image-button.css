@@ -1,0 +1,18 @@
+.profile__image-button {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    background-image: url("../../../../images/imageEditButton.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+}
+
+.profile__image-button:hover {
+    opacity: 1;
+    cursor: pointer;
+    border: 1px solid white;
+}
