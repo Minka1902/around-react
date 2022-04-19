@@ -24,29 +24,29 @@ export default function EditProfilePopup(props) {
     <div onMouseDown={onPopupClick}>
       <PopupWithForm name="profile" title="Edit profile" onSubmit={handleSubmit} isOpen={isOpen} onClose={onClose} buttonText={buttonText}>
         <input
+          className="popup__input"
           onChange={(event) => setName(event.target.value)}
           value={name}
           id="name-input"
           type="text"
-          className="form__input form__input_type_name"
           name="profileFormNameInput"
           required
           minLength="2"
           maxLength="40"
         />
-        <span id="name-input-error" className="form__input-error"></span>
+        <h4 className="popup__error-massage popupaboutme-error" id="name-input-error"></h4>
         <input
+          className="popup__input"
           onChange={(event) => setDescription(event.target.value)}
           value={description}
           id="title-input"
           type="text"
-          className="form__input form__input_type_title"
           name="profileFormTitleInput"
           required
           minLength="2"
           maxLength="200"
         />
-        <span id="title-input-error" className="form__input-error"></span>
+        <h4 className="popup__error-massage popupaboutme-error" id="title-input-error"></h4>
       </PopupWithForm>
     </div>
   );

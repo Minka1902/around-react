@@ -25,16 +25,16 @@ export default function EditAvatarPopup(props) {
         buttonText={buttonText}
       >
         <input
+          className="popup__input"
           ref={imageInput}
           id="profile-image-input"
           type="url"
-          className="form__input form__input_type_profile-image"
           placeholder="Link to new profile image"
           name="profileImageUrlInput"
           required
           minLength="1"
         />
-        <span id="profile-image-input-error" className="form__input-error"></span>
+        <h4 className="popup__error-massage avatar-error" id="profile-image-input-error"></h4>
       </PopupWithForm>
     </div>
   );

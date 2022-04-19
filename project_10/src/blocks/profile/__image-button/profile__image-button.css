@@ -5,7 +5,7 @@
     border: none;
     position: absolute;
     background: rgba(0, 0, 0, 0.8);
-    background-image: url("../../../../images/imageEditButton.svg");
+    background-image: url("../../../images/imageEditButton.svg");
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0;

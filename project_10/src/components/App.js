@@ -1,9 +1,9 @@
+import React, { useEffect } from 'react';
 import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
 import PopupWithForm from './PopupWithForm';
 import ImagePopup from './ImagePopup';
-import React, { useEffect } from 'react';
 import api from '../utils/api';
 import CurrentUserContext from '../contexts/CurrentUserContext';
 import EditProfilePopup from './EditProfilePopup';
@@ -29,7 +29,9 @@ function App() {
 
   const handleAddNewCardClick = () => setIsAddPlacePopupOpen(true);
 
-  const handlePopupClick = (event) => event.target.classList.contains('popup_active') && closeAllPopups();
+  const handlePopupClick = (event) => {
+    event.target.classList.contains('popup_opened') && closeAllPopups();
+  }
 
   const handleUpdateAvatar = (url) => {
     setEditAvatarButtonText('Updating...');

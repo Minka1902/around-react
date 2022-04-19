@@ -13,11 +13,11 @@ export default function ImagePopup(props) {
   }, [card]);
 
   return (
-    <div className={`popup popup_type_preview ${card ? 'popup_active' : ''}`} onMouseDown={onPopupClick}>
-      <div className="popup__window popup__window_type_preview">
-        <button type="button" className="popup__close-button" aria-label="close" onClick={onClose}></button>
-        <img src={popupImageLink} alt="preview" className="popup__preview-image" />
-        <p className="popup__description">{popupImageName}</p>
+    <div className={`popup popup_type_preview ${card ? 'popup_opened' : ''}`} onMouseDown={onPopupClick}>
+      <div className="popup__image-container">
+        <button className="popup__close-button" type="button" aria-label="close" onClick={onClose}></button>
+        <img className="popup__image" src={popupImageLink} alt="preview" />
+        <p className="popup__text">{popupImageName}</p>
       </div>
     </div>
   );
