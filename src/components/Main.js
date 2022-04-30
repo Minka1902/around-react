@@ -9,7 +9,8 @@ export default function Main(props) {
   return (
     <main className="main">
       <section className="profile">
-        <img className="profile__avatar" style={{ backgroundImage: `url(${currentUser.avatar})`}} onClick={onEditAvatarClick} />
+        <button type="button" class="profile__image-button" onClick={onEditAvatarClick}></button>
+        <img className="profile__avatar" alt="User Picture" src={currentUser.avatar} />
         <div className="profile__info">
           <div className="profile__container">
             <h1 className="profile__name text-hiding">{currentUser.name}</h1>

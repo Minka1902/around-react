@@ -67,6 +67,7 @@
 @import url("./blocks/card/__delete/card__delete.css");
 @import url("./blocks/card/__like-number/card__like-number.css");
 @import url("./blocks/card/__delete/card__delete_hidden/card__delete_hidden.css");
+@import url("./blocks/card/__like-container/card__like-container.css");
 
 /* ! footer */
 

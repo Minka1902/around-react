@@ -2,7 +2,7 @@ import PopupWithForm from './PopupWithForm';
 import React from 'react';
 
 export default function EditAvatarPopup(props) {
-  const imageInput = React.createRef();
+  const imageInput = React.useRef();
   const { isOpen, onClose, onUpdateAvatar, buttonText, onPopupClick } = props;
 
   const handleSubmit = (event) => {
