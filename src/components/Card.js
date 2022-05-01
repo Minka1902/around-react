@@ -22,7 +22,7 @@ export default function Card(props) {
       <img src={props.card.link} alt={props.card.name} className="card__image" onClick={handleClick} />
       <div className="card__info">
         <h2 className="card__text text-hiding">{props.card.name}</h2>
-        <div class="card__like-container">
+        <div className="card__like-container">
           <button className={cardLikeButtonClassName} type="button" aria-label="like" onClick={handleLikeClick}></button>
           <h3 className="card__like-number">{props.card.likes.length}</h3>
         </div>
